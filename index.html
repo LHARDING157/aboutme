@@ -4,61 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Class 1 Lab</title>
-    <style>
-      h1 {
-        font-family: sans-serif;
-        color: black;
-        background-color: lightgreen;
-        padding: 1rem;
-      }
-      p {
-        width: 300px;
-        padding: 0.5rem;
-      }
-    </style>
+    <title>About me</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>About Me</h1>
+    </header>
     <main>
-      <h1>Class 1 Lab</h1>
-      <p style="color: red; background-color: pink">
-        Question 1: What's your name?
+      <h2>Biography</h2>
+      <p>
+        Stuff to include: Education history, Overview of job experience and any
+        goals that I have.
       </p>
-      <p style="color: green; background-color: lightblue">
-        Question 2: What are your Hobbies?
-      </p>
-      <p style="color: darkblue; background-color: lightyellow">
-        Question 3: Can you do a back flip?
-      </p>
-      <p style="color: darkmagenta; background-color: lightsalmon">
-        Question 4: Would you like a cookie?
-      </p>
+      <script src="scripts.js"></script>
+      <button
+        onclick="username(), question1(), question2(), question3(), question4(), question5()"
+      >
+        Oooo A Quiz! :D
+      </button>
     </main>
     <footer></footer>
-    <script>
-      let name = prompt("What's your name?");
-      console.log("Hello! " + name);
-      alert("Welcome! " + name);
-      let age = prompt("What are your Hobbies?");
-      alert("Mmm...Interesting...");
-      console.log(age);
-      let backflip;
-      backflip = prompt("Can you do a back flip? (Yes or No)");
-      if (backflip === "no") {
-        alert("Aww that's too bad");
-      } else {
-        alert("REALLY!!! Teach meeee :D ");
-      }
-      console.log(backflip);
-      let cookies;
-      cookies = prompt("Would you like a cookie? (Yes or No)");
-      if (cookies === "no") {
-        alert("Whaaa- Why not???");
-      } else {
-        alert("Here Ya GO! :D");
-      }
-      console.log(cookies);
-    </script>
   </body>
 </html>

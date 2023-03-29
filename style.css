@@ -1,0 +1,30 @@
+h1 {
+  background-color: lightgreen;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1rem;
+  border: dashed black 3px;
+}
+
+h2 {
+  background-color: lightblue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200;
+  padding: 0.5rem 1rem;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  margin: 1rem;
+}
