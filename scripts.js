@@ -74,7 +74,7 @@ function question6() {
   let guess = prompt("Guess a number between 1 - 10");
   for (let i = 3; i >= 0; i--) {
     if (i === 0) {
-      alert("Unlucky, You have no more attempts" + number);
+      alert("Unlucky, You have no more attempts");
       break;
     }
     if (guess < number) {
@@ -91,21 +91,30 @@ function question6() {
   }
 }
 
-// function question6() {
-//   let answer;
-//   while (answer != 7) {
-//     answer = prompt("Guess a number between 1 - 10");
-//     if (answer > 7) {
-//       alert("Too High");
-//     } else if (answer < 7) {
-//       alert("Too Low");
-//     } else {
-//       userPoints++;
-//       alert("That's Correct!");
-//     }
-//   }
-// }
+function question7() {
+  let favColor = ["charcoal", "asura", "chrimson"];
+  let finalAnswer = prompt("Can you name any of the colors i like?");
+  for (let a = 6; a >= 0; a--) {
+    if (a === 0) {
+      alert("Unlucky, You have no more attempts");
+      break;
+    }
+    if (
+      finalAnswer.toLowerCase() === favColor[0] ||
+      finalAnswer.toLowerCase() === favColor[1] ||
+      finalAnswer.toLowerCase() === favColor[2]
+    ) {
+      userScore++;
+      alert("WOW!!! You got it right");
+    } else {
+      alert("Nooo not that one, you have " + a + " attempts left");
+      finalAnswer = prompt(
+        "Please Guess again you have " + a + " attempts left"
+      );
+    }
+  }
+}
 
 function end() {
-  alert("Congratz you got " + userPoints + " / 6");
+  alert("Congratz you got " + userPoints + " / 7");
 }
