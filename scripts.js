@@ -57,6 +57,6 @@ function question5() {
     alert("Good Job! Thanks for playing");
   } else {
     //console.log("Better luck next time! Click the quiz button to retry");
-    alert("Better luck next time! You can retry the quiz if you  :)");
+    alert("Better luck next time! You can retry the quiz if you want :)");
   }
 }
