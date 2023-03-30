@@ -1,18 +1,79 @@
-h1 {
-  background-color: lightgreen;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  padding: 1rem;
-  border: dashed black 3px;
+/* Styles added to the * symbol will affect every elemlent on the page */
+* {
+  box-sizing: border-box;
 }
 
-h2 {
-  background-color: lightblue;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2rem;
+body {
+  background-color: #d9d9d9;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  padding: 0.5rem 1rem;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  color: black;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding: 1.5rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.nava {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.nava:hover {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+  /* anchor elements do not inherit from parents by default */
+  color: inherit;
+}
+
+main.container {
+  padding-top: 1rem;
+}
+
+.hero-img {
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  width: 90%;
+  max-width: 80ch;
+  margin: 0 auto 2rem auto;
 }
 
 p {
@@ -27,4 +88,10 @@ button {
   padding: 0.5rem 1rem;
   text-align: center;
   margin: 1rem;
+}
+
+ol {
+  margin: 10px 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
 }

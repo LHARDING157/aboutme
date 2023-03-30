@@ -5,25 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>About Me</h1>
+      <div class="container header-container">
+        <h1>Luke's Aboutme</h1>
+        <nav>
+          <ul>
+            <li class="nava"><a href="#">Home</a></li>
+            <li class="nava"><a href="#">About</a></li>
+            <li class="nava"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h2>Biography</h2>
-      <p>
-        Stuff to include: Education history, Overview of job experience and any
-        goals that I have.
-      </p>
+    <main class="main">
+      <div class="container main-container">
+        <section class="hero-section">
+          <img class="hero-img" src="images/sunset.png" alt="sunset" />
+          <p class="hero-text">
+            Hello! I am Luke and I am 18 years old...... I don't know what else
+            to write O_O
+          </p>
+        </section>
+      </div>
       <script src="scripts.js"></script>
       <button
-        onclick="username(), question1(), question2(), question3(), question4(), question5()"
+        onclick="username(), question1(), question2(), question3(), question4(), question5(), question6(), end()"
       >
         Oooo A Quiz! :D
       </button>
+      <br />
+      <br />
+      <h3>Top 10 Best Places To Visit</h3>
+      <ol type="1" reversed>
+        <li>Maldives</li>
+        <li>Tokyo</li>
+        <li>Turks & Caicos</li>
+        <li>Rome</li>
+        <li>London, England</li>
+        <li>Tahiti</li>
+        <li>Bora Bora</li>
+        <li>Maui</li>
+        <li>Paris</li>
+        <li>South Island, New Zealand</li>
+      </ol>
     </main>
     <footer></footer>
   </body>
