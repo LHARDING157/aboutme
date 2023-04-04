@@ -72,7 +72,7 @@ const number = 7;
 
 function question6() {
   let guess = prompt("Guess a number between 1 - 10");
-  for (let i = 3; i >= 0; i--) {
+  for (let i = 2; i >= 0; i--) {
     if (i === 0) {
       alert("Unlucky, You have no more attempts");
       break;
